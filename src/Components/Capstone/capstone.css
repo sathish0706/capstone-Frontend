@@ -1,0 +1,15 @@
+.cpstn-btn > button {
+  display: inline-block;
+  background-color: #e6d29d;
+  width: 100px;
+  color: #633a05;
+  border: #ffffff;
+  border-radius: 5px;
+  height: 60px;
+  cursor: pointer;
+}
+.cpstn-btn > b {
+  font-size: 25px;
+  margin-right: 20px;
+  opacity: 0.5;
+}

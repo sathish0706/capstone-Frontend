@@ -1,0 +1,10 @@
+.takeQuery-container {
+  width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-left: 30vw;
+  margin-top: 25vh;
+}
+.take-query {
+  background-color: aqua;
+  padding: 20px;
+}

@@ -1,0 +1,22 @@
+.profile-container > img {
+  position: absolute;
+  left: 200px;
+}
+.profile-container {
+  position: relative;
+  top: 80px;
+  left: 20px;
+  border: solid crimson 2px;
+  width: 800px;
+  padding: 20px;
+}
+.profile-container > h1 {
+  text-align: left;
+  margin-left: 380px;
+  text-shadow: 10px;
+  font-size: 25px;
+  color: brown;
+}
+.profile-container > b {
+  color: blueviolet;
+}

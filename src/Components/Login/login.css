@@ -1,0 +1,41 @@
+.signin-input {
+  width: 500px;
+  height: 70px;
+}
+
+.signin-button {
+  width: 500px;
+  height: 50px;
+  color: green;
+  background-color: green;
+}
+.singin-container {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 15px;
+}
+.signup-forget-password {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(88, 152, 224);
+}
+
+.singnin-row-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* background-color: rgb(172, 82, 82); */
+}
+span {
+  color: red;
+}
+.navigate {
+  display: flex;
+  justify-content: space-between;
+}
