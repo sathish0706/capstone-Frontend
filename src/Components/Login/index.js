@@ -12,7 +12,7 @@ const formValidationSchema = yup.object({
   password: yup.string().min(8).max(12).required("Why not fill this Password "),
 });
 
-function Login() {
+function Login({ setUser }) {
   let navigate = useNavigate();
 
   const formik = useFormik({
@@ -30,6 +30,7 @@ function Login() {
             withCredentials: true,
           }
         );
+        setUser(response.data.user);
 
         if (response.data.user.role === 0) {
           navigate("/admin");
