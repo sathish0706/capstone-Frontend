@@ -6,7 +6,7 @@ const PrivateRoutes = () => {
   const { user } = useContext(UserContext);
   console.log(user);
   if (!user) {
-    return <div> Loading...</div>;
+    return <div> <Navigate to="/login" /> </div>;
   }
 
   return user ? <Outlet /> : <Navigate to="/login" />;
