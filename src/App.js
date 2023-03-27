@@ -3,7 +3,6 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Login from "./Components/Login";
 import Register from "./Components/Register";
-import UseFindUser from "./Hooks/UseFindUser";
 import CreateQuery from "./Components/Query/CreateQuery";
 import Query from "./Components/Query";
 import { useEffect, useState } from "react";
@@ -22,10 +21,10 @@ import Profile from "./Components/Profile";
 import OpenQuery from "./Components/Query/OpenQuery";
 
 function App() {
-  const [user, setUser] = UseFindUser();
+  const [user, setUser] = useState();
   const [queryDetails, setQueryDetails] = useState([]);
 
-  console.log(user);
+  console.log("user",user);
   console.log("url", process.env.React_App_Url);
   let getData = async () => {
     try {
@@ -47,7 +46,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route element={<PublicRoutes />}>
-            <Route path="/login" element={<Login />} />
+            <Route path="/login" element={<Login setUser={setUser} />} />
             <Route path="/" element={<Register />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/reset-password" element={<ResetPassword />} />
